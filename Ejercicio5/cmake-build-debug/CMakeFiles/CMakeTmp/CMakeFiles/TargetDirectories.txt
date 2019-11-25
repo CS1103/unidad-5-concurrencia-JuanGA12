@@ -1,0 +1,3 @@
+/Users/Juan Galvez/Desktop/GitHub Desktop/unidad-5-concurrencia-JuanGA12/Ejercicio5/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir
+/Users/Juan Galvez/Desktop/GitHub Desktop/unidad-5-concurrencia-JuanGA12/Ejercicio5/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
+/Users/Juan Galvez/Desktop/GitHub Desktop/unidad-5-concurrencia-JuanGA12/Ejercicio5/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_388ee.dir
