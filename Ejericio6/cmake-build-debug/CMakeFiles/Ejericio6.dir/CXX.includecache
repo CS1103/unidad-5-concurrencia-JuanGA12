@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Juan Galvez/Desktop/GitHub Desktop/unidad-5-concurrencia-JuanGA12/Ejericio6/main.cpp
+iostream
+-
+thread
+-
+mutex
+-
+

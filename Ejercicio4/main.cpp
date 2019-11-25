@@ -6,23 +6,24 @@
 
 using namespace std;
 
-std::condition_variable cv;
-std::mutex mutex;
+condition_variable cv;
+mutex mutex1;
 int r = 0;
 bool isReady(){return r!=0;}
 
 
-void printV(vector<int>& v){
-    std::unique_lock<std::mutex> lock(std::mutex);
+void imprimir(vector<int>& v){
+    std::unique_lock<std::mutex> lock(mutex1);
     cv.wait(lock,isReady);
-    for(auto it : v){
+    for(auto& it : v){
         std::cout << it << " ";
     }
 }
 
 int fibo(int n){
-    if(n == 0 || n == 1)
+    if(n == 0 || n == 1){
         return n;
+    }
     else{
         return fibo(n-2) + fibo(n-1);
     }
@@ -38,10 +39,10 @@ void showFibo(int num, vector<int>& v1){
 
 int main(){
     int num;
-    std::cin >> num;
+    cin >> num;
     vector<int> v1;
-    thread t1(showFibo,num,std::ref(v1));
-    thread t2(printV,std::ref(v1));
+    thread t1(showFibo,num,ref(v1));
+    thread t2(imprimir,ref(v1));
     t1.join();
     t2.join();
 
